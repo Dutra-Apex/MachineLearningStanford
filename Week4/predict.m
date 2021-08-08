@@ -21,11 +21,11 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
+%Adjusts the dimensions of X to account for bias
 X = [ones(size(X,1),1) X];
 
 h1 = sigmoid(X * Theta1');
 h1 = [ones(size(h1,1),1) h1];
-
 
 h2 = sigmoid(h1 * Theta2');
 
