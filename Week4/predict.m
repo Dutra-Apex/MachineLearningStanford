@@ -29,7 +29,9 @@ h1 = [ones(size(h1,1),1) h1];
 
 h2 = sigmoid(h1 * Theta2');
 
+% Uses max function to find the max value in each row
 [val, index] = max(h2, [], 2);
+
 
 p = index;
 
