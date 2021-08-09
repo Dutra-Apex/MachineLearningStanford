@@ -32,7 +32,7 @@ h2 = sigmoid(h1 * Theta2');
 % Uses max function to find the max value in each row
 [val, index] = max(h2, [], 2);
 
-
+% Uses the index of the value as the prediction
 p = index;
 
 % =========================================================================
