@@ -1,5 +1,6 @@
 function [error_train, error_val] = ...
     learningCurve(X, y, Xval, yval, lambda)
+    
 %LEARNINGCURVE Generates the train and cross validation set errors needed 
 %to plot a learning curve
 %   [error_train, error_val] = ...
