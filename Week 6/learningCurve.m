@@ -65,11 +65,6 @@ for i = 1:m
     %Stores the rror values for both train and val sets
     error_val(i) = linearRegCostFunction(Xval, yval, theta, 0);
     error_train(i) = linearRegCostFunction(Xtrain, ytrain, theta, 0);
-    
-    
-
-
-
 % -------------------------------------------------------------
 
 % =========================================================================
