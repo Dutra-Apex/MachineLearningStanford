@@ -12,9 +12,6 @@ figure; % open a new figure window
 %               population and revenue data have been passed in
 %               as the x and y arguments of this function.
 %
-% Hint: You can use the 'rx' option with plot to have the markers
-%       appear as red crosses. Furthermore, you can make the
-%       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
 
 plot(x, y, 'rx', 'MarkerSize', 12);
 ylabel('Profit (in $10,000s)');
