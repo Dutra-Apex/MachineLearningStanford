@@ -18,16 +18,6 @@ grad = zeros(size(theta));
 %               Compute the partial derivatives and set grad to the partial
 %               derivatives of the cost w.r.t. each parameter in theta
 %
-% Hint: The computation of the cost function and gradients can be
-%       efficiently vectorized. For example, consider the computation
-%
-%           sigmoid(X * theta)
-%
-%       Each row of the resulting matrix will contain the value of the
-%       prediction for that example. You can make use of this to vectorize
-%       the cost function and gradient computations. 
-%
-
 
 h = sigmoid(X*theta);
 
