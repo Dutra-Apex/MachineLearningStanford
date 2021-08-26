@@ -24,6 +24,11 @@ for i = 1:size(X,1)
     projection_k = x' *U(:, K);
     Z(i, :) = projection_k;
 
+% OR - Vectorized implementation
+
+% Ureduce = U(:, 1:k);
+% Z = X * Ureduce;
+
 % =============================================================
 
 end
