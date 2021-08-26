@@ -19,13 +19,14 @@ idx = zeros(size(X,1), 1);
 %               range 1..K
 %
 % Note: You can use a for-loop over the examples to compute this.
-%
+
 
 for i = 1:size(X,1)
     
   %Let d be the distance which we need to minimize
   d = 100000;
   
+  %Finds the distance between X_i and each centroid 
   for j = 1:K
     temp = sqrt((X(i, 1) - centroids(j, 1))^2 ...
         + (X(i, 2) - centroids(j, 2))^2);
