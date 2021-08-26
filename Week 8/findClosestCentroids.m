@@ -31,10 +31,10 @@ for i = 1:size(X,1)
     temp = sqrt((X(i, 1) - centroids(j, 1))^2 ...
         + (X(i, 2) - centroids(j, 2))^2);
     
+    %Chooses the smallest distance
     if temp < d
         d = temp;
         idx(i) = j;
-    
   end
 end
 
