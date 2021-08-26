@@ -35,6 +35,7 @@ for i = 1:size(X,1)
     if temp < d
         d = temp;
         idx(i) = j;
+     end
   end
 end
 
