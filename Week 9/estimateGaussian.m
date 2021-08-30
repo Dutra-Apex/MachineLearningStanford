@@ -21,6 +21,7 @@ sigma2 = zeros(n, 1);
 %               should contain variance of the i-th feature.
 %
 
+%Vectorized implementation
 mu(1) = mean(X(:, 1));
 mu(2) = mean(X(:, 2));
 
