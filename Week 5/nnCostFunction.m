@@ -12,7 +12,6 @@ function [J grad] = nnCostFunction(nn_params, ...
 % 
 %   The returned parameter grad should be a "unrolled" vector of the
 %   partial derivatives of the neural network.
-%
 
 % Reshape nn_params back into the parameters Theta1 and Theta2, the weight matrices
 % for our 2 layer neural network
