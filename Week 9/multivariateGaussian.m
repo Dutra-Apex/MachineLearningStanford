@@ -8,7 +8,6 @@ function p = multivariateGaussian(X, mu, Sigma2)
 %    as the \sigma^2 values of the variances in each dimension (a diagonal
 %    covariance matrix)
 
-
 k = length(mu);
 
 if (size(Sigma2, 2) == 1) || (size(Sigma2, 1) == 1)
