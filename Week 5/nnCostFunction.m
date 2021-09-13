@@ -59,7 +59,6 @@ Theta2_grad = zeros(size(Theta2));
 %               backpropagation. That is, you can compute the gradients for
 %               the regularization separately and then add them to Theta1_grad
 %               and Theta2_grad from Part 2.
-%
 
 
 % Part I - Forward Propagation:
@@ -119,9 +118,7 @@ Theta2_grad = 1/m * Theta2_grad;
 % Part 3: Regularize Parameters:
 
 Theta1_grad = Theta1_grad + ((lambda/m) * [zeros(size(Theta1, 1), 1) Theta1(:,2:end)]);
-Theta2_grad = Theta2_grad + ((lambda/m) * [zeros(size(Theta2, 1), 1) Theta2(:,2:end)]);
-  
-   
+Theta2_grad = Theta2_grad + ((lambda/m) * [zeros(size(Theta2, 1), 1) Theta2(:,2:end)]);  
 
 % -------------------------------------------------------------
 
@@ -129,6 +126,5 @@ Theta2_grad = Theta2_grad + ((lambda/m) * [zeros(size(Theta2, 1), 1) Theta2(:,2:
 
 % Unroll gradients
 grad = [Theta1_grad(:) ; Theta2_grad(:)];
-
 
 end
